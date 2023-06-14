@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="14dp"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:iconifiedByDefault="true"
+            android:imeOptions="actionSearch"
+            android:inputType="text|textAutoComplete|textAutoCorrect|textCapWords|textEnableTextConversionSuggestions"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="Grocery items">
+        </SearchView>
+    </androidx.cardview.widget.CardView>
+
+<com.google.android.material.chip.ChipGroup
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:visibility="visible"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.chip.Chip
+        android:checked="true"
+        android:visibility="gone"
+        android:id="@+id/c1"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/st1"
+        app:checkedIconEnabled="true"
+        app:rippleColor="@color/teal_700" />
+
+    <com.google.android.material.chip.Chip
+        android:checked="true"
+        android:visibility="gone"
+        android:id="@+id/c2"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/st2"
+        app:checkedIconEnabled="true"
+        app:rippleColor="@color/teal_700" />
+
+    <com.google.android.material.chip.Chip
+        android:checked="true"
+        android:visibility="gone"
+        android:id="@+id/c3"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/st3"
+        app:checkedIconEnabled="true"
+        app:rippleColor="@color/teal_700" />
+
+                <com.google.android.material.chip.Chip
+                    android:checked="true"
+                    android:visibility="gone"
+                    android:text="@string/st4"
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:id="@+id/c4"
+                    app:rippleColor="@color/teal_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+    <com.google.android.material.chip.Chip
+        android:checked="true"
+        android:visibility="gone"
+        android:id="@+id/c5"
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/st5"
+        app:checkedIconEnabled="true"
+        app:rippleColor="@color/teal_700" />
+
+</com.google.android.material.chip.ChipGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cctv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp">
+
+        <CheckedTextView
+            android:id="@+id/ctv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:listChoiceIndicatorMultiple"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:text="@string/st1"
+            android:textAllCaps="true"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp" />
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cctv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <CheckedTextView
+                    android:id="@+id/ctv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkMark="?android:listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/st2"
+                    android:textAllCaps="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cctv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <CheckedTextView
+                    android:id="@+id/ctv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkMark="?android:listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/st3"
+                    android:textAllCaps="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cctv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <CheckedTextView
+                    android:id="@+id/ctv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkMark="?android:listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/st4"
+                    android:textAllCaps="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cctv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <CheckedTextView
+                    android:id="@+id/ctv5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkMark="?android:listChoiceIndicatorMultiple"
+                    android:gravity="center"
+                    android:paddingStart="10dp"
+                    android:text="@string/st5"
+                    android:textAllCaps="true"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+  </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>

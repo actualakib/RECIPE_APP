@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">recipetest20</string>
+    <string name="st1">Rice</string>
+    <string name="st2">Oil</string>
+    <string name="st3">Sugar</string>
+    <string name="st4">Onion</string>
+    <string name="st5">Marshroom</string>
+</resources>
